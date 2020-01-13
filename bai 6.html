@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [];
+    for (let i = 0; i < 5; i++) {
+        array.push(prompt('Nhap phan tu vao mang: '));
+    }
+    let v =prompt('Nhap phan tu v vao mang: ');
+    let check;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === v) {
+            check=true;
+        }
+    }
+    document.write(array+ '<br>');
+    document.write("day la v :"+v +'<br>');
+    if (check==true){
+        document.write('V is in the array' + '<br>');
+    }else {document.write('V is not in the array' + '<br>');}
+</script>
+</body>
+</html>

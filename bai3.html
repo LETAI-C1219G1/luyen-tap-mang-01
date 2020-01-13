@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = [1,2,8,10,19];
+    let max = num[0];
+    let index = 0;
+    for (let i = 0; i < num.length; i++) {
+        if (num[i] > max) {
+            max = num[i];
+            index = i;
+        }
+    }
+    document.write("Max = " + max + " at index: " + "num["+index+"]");
+    let sum =0;
+    for (let i=0;i<num.length;i++){
+        sum += num[i];
+    }
+    sum = sum/10;
+    alert(sum);
+</script>
+</body>
+</html>
